@@ -57,7 +57,7 @@ app.post("/comments", (req, res) => {
         if (error) throw error;
         return res.redirect("/");
 
-//added
+
       }
     );
 
