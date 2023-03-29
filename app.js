@@ -7,14 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.set("view engine", "ejs");
 
-app.locals.showErrror = () => {
-  if (req.body.user_id == 1) {
-    return `<div class="alert alert-warning" role="alert">
-      Oops !!!!! You Can Not comment on your post.
-    </div>`
-  }
 
-}
 
 
 //connect with DB
